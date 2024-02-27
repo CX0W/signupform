@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    font-family: sans-serif;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('Norse-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.left {
+    background-image: url(halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.left > p {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+}
+
+h1 {
+    text-align: justify;
+    color: white;
+    font-family: 'MyFont';
+    font-size: 6.5em;
+}
+
+.banner {
+    width: auto;
+    height: 10em;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.banner > img {
+    height: 8em;
+}
+
+input[type="text"],
+input[type="email"],
+button,
+input[type="password"],
+input[type="tel"] {
+    width: 15rem;
+    height:1.5rem;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    outline:none;
+    transition:0.5s;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #f9fafb;
+}
+
+.right > section > p {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+section {
+    height: 20%;
+}
+
+div > div > label + input {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset > div {
+    display: flex;
+    gap: 5em;
+}
+
+button {
+    appearance: none;
+    background-color: #596d48;
+    height: 2em;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+label {
+    font-size: 10px;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.wrapper {
+    padding: 12px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper > div {
+    font-weight: bold;
+}
+
+section > p {
+    padding: 12px;
+}
+
+.button-section {
+    padding: 12px;
+}
+
+a {
+    color: #596d48;
+    text-decoration: none;
+}
+
+a:hover,
+button:hover {
+    color: #3b4830;
+    text-decoration: none;
+    cursor: pointer;
+}
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+input[type="tel"]:hover{
+
+    border:2px solid blue;
+
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus{
+    border:2px solid green;
+}
+.input-wrapper{
+    position:relative;
+}
+.input-wrapper::after{
+    content:"*Required";
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left:90px;
+    font-size:10px;
+    color:red;
+}
+.formfields{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+span{
+    width:100%;
+    font-size:0.7rem;
+    color:red;
+}
